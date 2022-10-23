@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="335dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:queryHint="검색어를 입력하세요"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
+
+        <ImageButton
+            android:id="@+id/Enroll"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="#00ff0000"
+            app:srcCompat="@android:drawable/ic_menu_edit" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/major"
+            android:layout_width="119dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:layout_gravity="center" />
+
+        <Spinner
+            android:id="@+id/professor"
+            android:layout_width="119dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:layout_gravity="center" />
+
+        <Spinner
+            android:id="@+id/lecture1"
+            android:layout_width="119dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/searchBtn"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="#00ff0000"
+            android:layout_weight="1"
+            android:text="검색" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ListView
+                    android:id="@+id/listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/lecture"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:scaleType="fitCenter"
+                android:src="@drawable/lecture" />
+
+            <ImageButton
+                android:id="@+id/mypage"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="-5dp"
+                android:layout_marginRight="-5dp"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:scaleType="fitCenter"
+                android:src="@drawable/mypage" />
+
+            <ImageButton
+                android:id="@+id/post"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="-5dp"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:scaleType="fitCenter"
+                android:src="@drawable/board" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/spinneer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Certify">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/professor"
+                android:layout_width="130dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/professor" />
+
+            <Button
+                android:id="@+id/student"
+                android:layout_width="130dp"
+                android:layout_height="120dp"
+                android:background="@drawable/student" />
+
+            <Button
+                android:id="@+id/teacher"
+                android:layout_width="130dp"
+                android:layout_height="120dp"
+                android:background="@drawable/teacher" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="45dp">
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="354dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp" />
+
+        <Button
+            android:id="@+id/post"
+            android:layout_width="380dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="첨부하기"
+            android:textSize="17dp" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="380dp"
+            android:layout_height="70dp"
+            android:text="제출하기"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:textSize="17dp" />
+    </LinearLayout>
+
+</LinearLayout>
+
+

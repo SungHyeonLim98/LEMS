@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="200dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:src="@drawable/lems" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/Email"
+                android:layout_width="226dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:hint="이메일"
+                android:inputType="textEmailAddress"
+                android:selectAllOnFocus="true" />
+
+            <Button
+                android:id="@+id/OverLap"
+                android:layout_width="125dp"
+                android:layout_height="46dp"
+                android:text="중복확인"></Button>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="5dp"
+            android:hint="비밀번호"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:selectAllOnFocus="true" />
+
+        <EditText
+            android:id="@+id/Password2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="5dp"
+            android:hint="비밀번호 확인"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:selectAllOnFocus="true" />
+
+        <EditText
+            android:id="@+id/Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="5dp"
+            android:hint="이름"
+            android:imeOptions="actionDone"
+            android:inputType="textPersonName"
+            android:selectAllOnFocus="true"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="322dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/Birth"
+                android:layout_width="150dp"
+                android:layout_height="46dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:hint="생년월일6자리"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="6"
+                android:selectAllOnFocus="true"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="383dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ㅡ"></TextView>
+
+            <EditText
+                android:id="@+id/FirstNum"
+                android:layout_width="40dp"
+                android:layout_height="46dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="0dp"
+                android:gravity="center"
+                android:hint=""
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="383dp" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="46dp"
+                android:gravity="center"
+                android:text="● ● ● ● ● ●"></TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/PhoneNum1"
+                android:layout_width="66dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="0dp"
+                android:gravity="center"
+                android:text="010"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ㅡ"></TextView>
+
+            <EditText
+                android:id="@+id/PhoneNum2"
+                android:layout_width="125dp"
+                android:layout_height="46dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:hint=""
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="4"
+                android:selectAllOnFocus="true"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="383dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ㅡ"></TextView>
+
+            <EditText
+                android:id="@+id/PhoneNum3"
+                android:layout_width="125dp"
+                android:layout_height="46dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:hint=""
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="4"
+                android:selectAllOnFocus="true"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="383dp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/department"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:hint="학교 입력"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/major"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:hint="학과 입력"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/SignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:text="회원가입"></Button>
+
+
+    </LinearLayout>
+</LinearLayout>

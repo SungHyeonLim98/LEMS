@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "563061806018",
+    "project_id": "lems-c0bd5",
+    "storage_bucket": "lems-c0bd5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:563061806018:android:73e088251c4eabd5aabc5b",
+        "android_client_info": {
+          "package_name": "com.example.lems"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "563061806018-qms1lnkvmpl7079ucginv9k6iongmklu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lems",
+            "certificate_hash": "42b7f7ed13e710fcc93c7f314505593f09a140ee"
+          }
+        },
+        {
+          "client_id": "563061806018-uvf9ooplbs3v4qh6ljqmhbkpbm96gqqf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1MIZhfDwxxc7R7z6VWXPXlr6v1lUEKrs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "563061806018-uvf9ooplbs3v4qh6ljqmhbkpbm96gqqf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
